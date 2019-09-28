@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Scholary_Software_Search.Pages.Softwares {
     public class DetailsModel : PageModel {
-        private readonly Scholary_Software_Search.Data.PrototypeContext _context;
+        private readonly Scholary_Software_Search.Data.DataContext _context;
 
-        public DetailsModel(Scholary_Software_Search.Data.PrototypeContext context) {
+        public DetailsModel(Scholary_Software_Search.Data.DataContext context) {
             _context = context;
         }
 

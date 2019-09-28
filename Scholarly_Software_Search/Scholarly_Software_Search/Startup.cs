@@ -18,8 +18,8 @@ namespace Scholary_Software_Search {
         public void ConfigureServices(IServiceCollection services) {
             services.AddRazorPages();
 
-            services.AddDbContext<PrototypeContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("PrototypeContext")));
+            services.AddDbContext<DataContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +34,7 @@ namespace Scholary_Software_Search {
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseAuthentication();
 
             app.UseRouting();
 

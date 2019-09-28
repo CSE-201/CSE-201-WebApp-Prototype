@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Scholary_Software_Search.Pages.Softwares {
     public class EditModel : PageModel {
-        private readonly Scholary_Software_Search.Data.PrototypeContext _context;
+        private readonly Scholary_Software_Search.Data.DataContext _context;
 
-        public EditModel(Scholary_Software_Search.Data.PrototypeContext context) {
+        public EditModel(Scholary_Software_Search.Data.DataContext context) {
             _context = context;
         }
 

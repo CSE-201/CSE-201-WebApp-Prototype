@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 namespace Scholary_Software_Search.Data {
-    public class PrototypeContext : DbContext {
-        public PrototypeContext(DbContextOptions<PrototypeContext> options)
+    public class DataContext : DbContext {
+        public DataContext(DbContextOptions<DataContext> options)
             : base(options) {
         }
 
